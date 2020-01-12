@@ -1,3 +1,9 @@
+/*
+This class contains objects from helpers classes, that are using in each extended test.
+Also here described before tests configurations.
+This configurations are running before each extended class, that exists tests.
+ */
+
 package basic;
 
 import com.codeborne.selenide.Configuration;

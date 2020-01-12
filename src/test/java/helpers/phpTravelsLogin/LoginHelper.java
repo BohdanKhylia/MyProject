@@ -1,3 +1,8 @@
+/*
+Each SelenideElement object here is an element from DOM tree, on Login page.
+Each method allows to interact elements on Login page.
+ */
+
 package helpers.phpTravelsLogin;
 
 import com.codeborne.selenide.SelenideElement;
@@ -9,7 +14,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class LoginHelper {
 
-    private String PhpTravelsUrl = "https://www.phptravels.net";
+    public String PhpTravelsUrl = "https://www.phptravels.net";
     private String loginRoute = "/login";
 
     private SelenideElement usernameField = $(".form-group input[type='email']");
