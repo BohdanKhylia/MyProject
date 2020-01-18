@@ -5,8 +5,8 @@
     </listeners>
     <test name="a-t1">
         <classes>
-            <class name="tests.Login" />
-            <class name="tests.ProfileEditing" />
+            <class name="tests.login.Login" />
+            <class name="tests.profile.ProfileEditing" />
         </classes>
     </test>
 </suite>

@@ -1,4 +1,4 @@
-package tests;
+package tests.login;
 
 import basic.BasicLocal;
 import org.testng.annotations.DataProvider;

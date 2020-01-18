@@ -1,4 +1,4 @@
-package tests;
+package tests.profile;
 
 import basic.BasicLocal;
 import helpers.phpTravelsLogin.LoginHelper;
