@@ -1,0 +1,14 @@
+,
+,123
+123,
+ ,
+admin,
+ ,123456
+admin,admin
+admin@,123456
+admin@mail,123456
+admin@mail.,123456
+admin@mail.com,
+admin@mail.com,null
+admin@mail.com,*
+admin@mail.com,
