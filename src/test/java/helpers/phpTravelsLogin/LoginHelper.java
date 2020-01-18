@@ -14,7 +14,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class LoginHelper {
 
-    public String PhpTravelsUrl = "https://www.phptravels.net";
+    public static String phpTravelsUrl = "https://www.phptravels.net";
     private String loginRoute = "/login";
     private String validationText = "Invalid Email or Password";
 
@@ -27,7 +27,7 @@ public class LoginHelper {
 
     @Step("Open login page")
     public void openLoginPage(){
-        open(PhpTravelsUrl.concat(loginRoute));
+        open(phpTravelsUrl.concat(loginRoute));
     }
 
     @Step("Set username value")
