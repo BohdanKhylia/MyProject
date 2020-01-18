@@ -16,12 +16,14 @@ public class LoginHelper {
 
     public String PhpTravelsUrl = "https://www.phptravels.net";
     private String loginRoute = "/login";
+    private String validationText = "Invalid Email or Password";
 
     private SelenideElement usernameField = $(".form-group input[type='email']");
     private SelenideElement passwordField = $(".form-group input[type='password']");
     private SelenideElement rememberMeCheckBox = $("#remember-me");
     private SelenideElement loginButton = $("#loginfrm button");
     private SelenideElement helloMessage = $("h3.text-align-left");
+    private SelenideElement validationMessage = $(".alert.alert-danger");
 
     @Step("Open login page")
     public void openLoginPage(){
@@ -52,6 +54,11 @@ public class LoginHelper {
     @Step("Verify, that login is processed successfully")
     public void checkLoginSuccess(){
         helloMessage.shouldBe(visible);
+    }
+
+    @Step("Check, that validation message visible")
+    public void checkValidationMessage(){
+        validationMessage.shouldHave(text(validationText));
     }
 
     public void login(String username, String password){

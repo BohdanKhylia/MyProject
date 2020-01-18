@@ -1,18 +1,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="All" verbose="2" annotations="JDK">
+<suite name="All">
     <listeners>
-        <listener class-name="com.example.MyListener" />
+        <listener class-name="helpers.FailedTestsListener" />
     </listeners>
-    <test name="a-t1" preserve-order="true" >
+    <test name="a-t1">
         <classes>
-            <class name="server.InstallTest" />
-            <class name="server.ATest" />
-        </classes>
-    </test>
-    <test name="a-t2" preserve-order="true" >
-        <classes>
-            <class name="server.SCHTest" />
-            <class name="server.PRGTest" />
+            <class name="tests.Login" />
+            <class name="tests.ProfileEditing" />
         </classes>
     </test>
 </suite>
