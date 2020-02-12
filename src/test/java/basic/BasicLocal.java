@@ -19,8 +19,8 @@ public class BasicLocal {
 
     @BeforeClass
     public void setUpTests(){
-        Configuration.browser = System.getProperty("browserType", "chrome");
-        Configuration.browserVersion = System.getProperty("browserVersion", "78.0");
+//        Configuration.browser = System.getProperty("browserType", "chrome");
+//        Configuration.browserVersion = System.getProperty("browserVersion", "78.0");
         Configuration.savePageSource = false;
         Configuration.startMaximized = true;
         //Configuration.screenshots = false;

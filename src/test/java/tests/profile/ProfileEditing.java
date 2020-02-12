@@ -10,9 +10,9 @@ public class ProfileEditing extends BasicLocal {
     public void changeProfile(){
         accountPage.openProfilePage(LoginHelper.phpTravelsUrl);
         accountPage
-                .withAddress1("Test Address 1")
-                .withAddress2("Test Address 2")
-                .withCity("Test City")
+                .withAddress1("TestOne Address 1")
+                .withAddress2("TestOne Address 2")
+                .withCity("TestOne City")
                 .withCountry("Austria")
                 .withPhone("1234567890")
                 .withState("Tyrol")

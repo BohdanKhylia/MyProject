@@ -15,7 +15,7 @@
         <selenide.version>5.6.0</selenide.version>
         <restAssured.version>4.1.2</restAssured.version>
         <compiler.version>1.8</compiler.version>
-        <mavenCompilerPlugin.version>3.8.1</mavenCompilerPlugin.version>
+        <mavenCompilerPlugin.version>3.8.0</mavenCompilerPlugin.version>
         <mavenSurefirePlugin.version>2.22.2</mavenSurefirePlugin.version>
         <allureTestng.version>2.13.1</allureTestng.version>
     </properties>
@@ -42,10 +42,6 @@
                 <exclusion>
                     <groupId>org.testng</groupId>
                     <artifactId>testng</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>slf4j-api</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
